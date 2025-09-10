@@ -82,24 +82,25 @@ ol, li {
 
 .carousel {
   position: relative;
-  padding-top: 20%;
+  padding-top: 10px;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
 }
 
 .carousel__viewport {
-  position: absolute;
+    position: relative;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   display: flex;
-  overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  gap: 2vw; /* Add spacing between slides */
-  padding: 2vw 0; /* Optional: vertical padding */
+  gap: 2vw; 
+  padding: 2vw 2vw; 
 }
 
 @media screen {
