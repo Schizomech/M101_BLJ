@@ -48,12 +48,12 @@ body {
   margin: 0 auto;
   padding: 1%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #6873FA;
+  background-color: #6873fa;
 }
 
 * {
   box-sizing: border-box;
-  scrollbar-color: transparent transparent; 
+  scrollbar-color: transparent transparent;
   scrollbar-width: 0px;
 }
 
@@ -74,7 +74,8 @@ body {
   -ms-overflow-style: none;
 }
 
-ol, li {
+ol,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -88,68 +89,77 @@ ol, li {
 }
 
 .carousel__viewport {
-    position: relative;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   display: flex;
-    overflow-x: auto;
-    overflow-y: auto;
+  overflow-x: auto;
+  overflow-y: auto;
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  gap: 2vw; 
-  padding: 2vw 2vw; 
+  gap: 2vw;
+  padding: 2vw 2vw;
 }
 
 @media screen {
   .carousel__slide {
-  position: relative;
-  flex: 0 0 20%;
-  width: 100%;
-  height: 95%;
-  background-color: rgb(89, 130, 207);
-  counter-increment: item;
-}
+    position: relative;
+    flex: 0 0 20%;
+    width: 100%;
+    height: 95%;
+    max-width: 400px;
+    max-height: 500px;
+    min-height: fit-content;
+    min-width: fit-content;
+    background-color: rgb(89, 130, 207);
+    counter-increment: item;
   }
+}
 
 @media screen and (max-width: 3000px) {
   .carousel__slide {
-  position: relative;
-  flex: 0 0 70%;
-  width: 100%;
-  height: 95%;
-  background-color: rgb(89, 130, 207);
-  counter-increment: item;
-}
+    position: relative;
+    flex: 0 0 70%;
+    width: 100%;
+    height: 95%;
+    min-height: fit-content;
+    min-width: fit-content;
+    background-color: rgb(89, 130, 207);
+    counter-increment: item;
   }
-
-@media screen and (max-width: 1024px) {
-.carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  height: 95%;
-  background-color: rgb(89, 130, 207);
-  counter-increment: item;
 }
-    }
+
+@media screen and (max-width: 957px) {
+  .carousel__slide {
+    position: relative;
+    flex: 0 100% 100%;
+    width: 100%;
+    height: 95%;
+    max-width: 300px;
+    max-height: 350px;
+    min-height: fit-content;
+    min-width: fit-content;
+    background-color: rgb(89, 130, 207);
+    counter-increment: item;
+  }
+}
 
 .carousel__slide {
   position: relative;
-  flex: 0 0 45%;      /* Show two at a time with some gap */
-  width: 45%;
-  height: 60vh;       /* Tall rectangle */
-  min-height: 350px;  /* Ensures it's tall on small screens */
+  flex: 0 0 45%;
+  width: 60vh;
+  height: 75vh;
   background-color: rgb(89, 130, 207);
   counter-increment: item;
-  border-radius: 2rem;    /* Rounded corners */
+  border-radius: 2rem;
   box-shadow: 0 4px 24px #0002;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0.5vw;        /* Horizontal spacing */
+  margin: 0 0.5vw;
   transition: box-shadow 0.2s;
 }
 
@@ -162,7 +172,7 @@ ol, li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-40%,70px);
+  transform: translate3d(-50%, -40%, 70px);
   color: #fff;
   font-size: 2.5em;
 }
@@ -227,7 +237,7 @@ ol, li {
 
 .carousel::before,
 .carousel::after {
-  content: '';
+  content: "";
   z-index: 1;
   background-color: #333;
   background-size: 1.5rem 1.5rem;
@@ -241,7 +251,7 @@ ol, li {
 }
 
 .carousel::before {
-   background-image: url();
+  background-image: url();
 }
 .carousel::after {
   background-image: url();
