@@ -1,0 +1,44 @@
+#grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "Nav Nav"
+    "MainImage MainImage"
+    "Trailers  Images"
+    "description userreview"
+    "ourreview ourreview";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+Nav {
+    grid-area: Nav;
+    background-color: lightgray;
+}
+#MainImage {
+    grid-area: MainImage;
+    background-color: lightpink;
+    text-align: center;
+}
+#Trailers {
+    grid-area: Trailers;
+    background-color: lightblue;
+}
+#Images {
+    grid-area: Images;
+    background-color: lightgreen;
+}
+#description {
+    grid-area: description;
+    background-color: lightgray;
+}
+#UserReview {
+    grid-area: userreview;
+    background-color: lightyellow;
+}
+#ourReview {
+    grid-area: ourreview;
+    background-color: lightpink;
+}
