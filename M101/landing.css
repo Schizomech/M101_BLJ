@@ -294,13 +294,14 @@ nav {
   text-align: center;
   font-size: 1.2rem;
   background-color: #2c2d38;
-  border-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   height: 100px;
   width: 100%;
-  border-color: #40414d;
+  border-color: #472c13;
   border-style: solid;
   border-width: 10px;
-  box-shadow: 0 4px 24px #0002;
+  box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.644);
   }
 
 Header {
