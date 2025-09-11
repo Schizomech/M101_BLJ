@@ -2,43 +2,172 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 2fr 2.5fr 1fr 1.5fr 0.1fr;
   grid-template-areas:
     "Nav Nav"
     "MainImage MainImage"
     "Trailers  Images"
     "description userreview"
-    "ourreview ourreview";
+    "ourreview ourreview"
+    "footer footer";
   grid-gap: 10px;
-  padding: 10px;
+
+}
+
+body {
+    background-image: url('Missing_texture.png');
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+    color: rgb(207, 66, 0);
+    -webkit-text-stroke: 0.2vw #5f1e00;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px 0px;
+}
+#GameTitle {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "EDPT" 100,
+        "EHLT" 12;
+    font-size: 50px;
+    margin-left: 10px;
+    text-align: center;
 }
 
 Nav {
-    grid-area: Nav;
-    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: maroon;
+    padding: 10px;
+
 }
 #MainImage {
     grid-area: MainImage;
     background-color: lightpink;
-    text-align: center;
+    background-image: url('Missing_texture.png');
+    background-size: stretch;
+    border-radius: 10px;
 }
 #Trailers {
     grid-area: Trailers;
     background-color: lightblue;
 }
+#descriptionText {
+    margin: 10px;
+}
+#UserReviewText {
+    margin: 10px;
+}
+#ourReviewText {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
 #Images {
     grid-area: Images;
     background-color: lightgreen;
+    background-image: url('Missing_texture.png');
+    background-size: cover;
+    border-radius: 10px;
 }
 #description {
     grid-area: description;
-    background-color: lightgray;
+    background-color: rgb(255, 171, 171);
+    border-radius: 10px;
 }
 #UserReview {
     grid-area: userreview;
     background-color: lightyellow;
+    border-radius: 10px;
 }
 #ourReview {
     grid-area: ourreview;
     background-color: lightpink;
+    border-radius: 10px;
 }
+footer {
+    grid-area: footer;
+
+}
+
+.button-b, .button-m {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 20vw;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button-m span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-m span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-m:hover span {
+    padding-right: 25px;
+}
+
+.button-m:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button-b span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-b span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.button-b:hover span {
+    padding-left: 25px;
+}
+
+.button-b:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
