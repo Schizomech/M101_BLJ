@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dcs-review.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><button class="button-b" href="index.html"><span>Back </span></button></a>
+      <a href="index.html" class="logo-font"><h2>RBN</h2></a>
+      <a href="index.html"><button class="button-m"><span>More </span></button></a>
+    </nav>
+    <main>
+      <div id="grid-container">
+        <div id="MainImage">
+          <h1 id="GameTitle">D - DIGITAL <br> C - COMBAT <br> S - SIMULATOR</h1>
+        </div>
+        <div id="Trailers">
+          <iframe
+            src="https://www.youtube.com/watch?v=bG6X9UIMtPY"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+<!-----------------------------------------------------------------Slideshow--------------------------------------------------------------------------------------->
+        <div id="Images">
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="https://www.digitalcombatsimulator.com/upload/iblock/2be/7mu499atha668mf7pqw10bp904ra3jlh/DCS_2.8_World_Combat_Flight_Simulator-06.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://www.digitalcombatsimulator.com/upload/iblock/9c6/p140pjosbedpvd54r9zzz70t3x2clsu4/DCS_2.8_World_Combat_Flight_Simulator-01.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://www.digitalcombatsimulator.com/upload/iblock/6fa/feshtm4ggsb40fwji5rvtgs0qsv7ipz2/DCS_2.8_World_Combat_Flight_Simulator-02.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://www.digitalcombatsimulator.com/upload/iblock/fe5/laakedb5i9uvnn1d7s1ls11e2gpjkkzb/DCS_2.8_World_Combat_Flight_Simulator-03.jpg"
+            />
+
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+<!-------------------------------------------------------------end----Slideshow--------------------------------------------------------------------------------------->
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+        <div id="description">
+          <div id="descriptionText">
+            <h1>Description</h1>
+            <p>
+                DCS World is a free-to-play digital battlefield game developed by
+                Eagle Dynamics. It features a wide range of military aircraft,
+                ground vehicles, and naval vessels, allowing players to experience
+                realistic combat scenarios. The game offers both single-player and
+                multiplayer modes, with a focus on authenticity and attention to
+                detail. Players can engage in air-to-air and air-to-ground combat,
+                as well as participate in cooperative missions and competitive
+                dogfights. DCS World is known for its high-fidelity flight models,
+                realistic physics, and immersive environments, making it a popular
+                choice among flight simulation enthusiasts.
+            </p>
+          </div>
+        </div>
+        <div id="UserReview">
+          <div>
+            <h1>User Reviews</h1>
+            <p id="UserReviewText">
+                "DCS World ist das ultimative Flugerlebnis! Die Grafik ist
+                atemberaubend und die Flugphysik ist unglaublich realistisch. Ich
+                habe so viel Spaß daran, verschiedene Flugzeuge zu fliegen und
+                Missionen zu absolvieren. Die Community ist auch sehr aktiv und
+                hilfsbereit. Absolut empfehlenswert für alle Flugzeugliebhaber!"
+            </p>
+          </div>
+        </div>
+        <div id="ourReview">
+          <div>
+            <h1>Our Review</h1>
+            <p id="ourReviewText">
+                DCS World ist ein beeindruckendes Flugsimulationsspiel, das
+                durch seine realistische Grafik und detaillierte Flugphysik
+                besticht. Die Vielzahl an verfügbaren Flugzeugen und Missionen
+                sorgt für langanhaltenden Spielspaß. Besonders hervorzuheben ist
+                die engagierte Community, die regelmäßig neue Inhalte und Mods
+                bereitstellt. Ein Muss für alle Fans von Flugsimulationen!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a id="footer" class="logo-font" href="Datenschutz.html"
+          >© 2025 RBN. All rights reserved.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
