@@ -11,223 +11,219 @@
     "ourreview ourreview"
     "footer footer";
   grid-gap: 10px;
-
 }
 
 body {
-    background-image: url('https://web-assets.bcg.com/8e/cf/276ec569492cb6f13a8b56061b35/what-is-water-really-worth-report-rectangle.jpg');
-    background-size: cover;
+  background-image: url("https://web-assets.bcg.com/8e/cf/276ec569492cb6f13a8b56061b35/what-is-water-really-worth-report-rectangle.jpg");
+  background-size: cover;
 }
 a {
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: "Jersey 15", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5vw;
-    color: rgb(207, 66, 0);
-    -webkit-text-stroke: 0.2vw #5f1e00;
-    text-shadow: 2px 2px 4px #000000;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: 0px 0px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vw;
+  color: rgb(207, 66, 0);
+  -webkit-text-stroke: 0.2vw #5f1e00;
+  text-shadow: 2px 2px 4px #000000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px 0px;
 }
 h2 {
-    margin: 0px 0px;
+  margin: 0px 0px;
 }
 #GameTitle {
-    font-family: "Nabla", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "EDPT" 100,
-        "EHLT" 12;
-    font-size: 50px;
-    margin-left: 10px;
-    text-align: center;
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "EDPT" 100, "EHLT" 12;
+  font-size: 50px;
+  margin-left: 10px;
+  text-align: center;
 }
 
 Nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    background-color: maroon;
-    padding: 10px;
-    box-shadow: #000000 5px 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: maroon;
+  padding: 10px;
+  box-shadow: #000000 5px 5px 15px;
 }
 #MainImage {
-    grid-area: MainImage;
-    background-color: lightpink;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPte_8tzXVbALCRVQkp7N2OYC3vrgF0XDZJA&s');
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
-    box-shadow: #000000 5px 5px 15px;
+  grid-area: MainImage;
+  background-color: lightpink;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPte_8tzXVbALCRVQkp7N2OYC3vrgF0XDZJA&s");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 66, 0);
+  box-shadow: #000000 5px 5px 15px;
 }
 #Trailers {
-    grid-area: Trailers;
-    background-color: lightblue;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
-    box-shadow: #000000 5px 5px 15px;
+  grid-area: Trailers;
+  background-color: lightblue;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 66, 0);
+  box-shadow: #000000 5px 5px 15px;
 }
 #descriptionText {
-    margin: 10px;
+  margin: 10px;
 }
 #UserReviewText {
-    margin: 10px;
+  margin: 10px;
 }
 #ourReviewText {
-    text-align: center;
+  text-align: center;
 }
 h1 {
-    text-align: center;
+  text-align: center;
 }
 iframe {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 #Images {
-    grid-area: Images;
-    background-size: cover;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
-    box-shadow: #000000 5px 5px 15px;
-    max-width: 50vw;
-    max-height: 40vw;
-    overflow:hidden;
-
+  grid-area: Images;
+  background-size: cover;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 66, 0);
+  box-shadow: #000000 5px 5px 15px;
+  max-width: 50vw;
+  max-height: 40vw;
+  overflow: hidden;
 }
 .mySlides {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .w3-display-right {
-    position: absolute;
-    top: 130vh;
-    right: 1vw;
-    transform: translate(0%, -50%);
-    padding: 8px 16px;
+  position: absolute;
+  top: 130vh;
+  right: 1vw;
+  transform: translate(0%, -50%);
+  padding: 8px 16px;
 }
 .w3-display-left {
-    position: absolute;
-    top: 130vh;
-    left: 50vw;
-    transform: translate(0%, -50%);
-    padding: 8px 16px;
+  position: absolute;
+  top: 130vh;
+  left: 50vw;
+  transform: translate(0%, -50%);
+  padding: 8px 16px;
 }
 .w3-black {
-    color: #fff !important;
-    background-color: #000 !important;
+  color: #fff !important;
+  background-color: #000 !important;
 }
 #description {
-    grid-area: description;
-    background-color: #a6a2dd;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
-    box-shadow: #000000 5px 5px 15px;
+  grid-area: description;
+  background-color: #a6a2dd;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 66, 0);
+  box-shadow: #000000 5px 5px 15px;
 }
 #UserReview {
-    grid-area: userreview;
-    background-color: #a6a2dd;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
-    box-shadow: #000000 5px 5px 15px;
+  grid-area: userreview;
+  background-color: #a6a2dd;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 66, 0);
+  box-shadow: #000000 5px 5px 15px;
 }
 #ourReview {
-    grid-area: ourreview;
-    background-color: #a6a2dd;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
-    box-shadow: #000000 5px 5px 15px;
+  grid-area: ourreview;
+  background-color: #a6a2dd;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 66, 0);
+  box-shadow: #000000 5px 5px 15px;
 }
 footer {
-    grid-area: footer;
-    background-color: black;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: #000000 5px 5px 15px;
+  grid-area: footer;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: #000000 5px 5px 15px;
 }
 #footer {
-    font-size: 4vw;
+  font-size: 4vw;
 }
 
-.button-b, .button-m {
-    border-radius: 4px;
-    background-color: rgb(207, 66, 0);;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 20vw;
-    transition: all 0.5s;
-    cursor: pointer;
+.button-b,
+.button-m {
+  border-radius: 4px;
+  background-color: rgb(207, 66, 0);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 20vw;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .button-m span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
 .button-m span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
 .button-m:hover span {
-    padding-right: 25px;
+  padding-right: 25px;
 }
 
 .button-m:hover span:after {
-    opacity: 1;
-    right: 0;
+  opacity: 1;
+  right: 0;
 }
 
 .button-b span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
 .button-b span:after {
-    content: '\00ab';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: -20px;
-    transition: 0.5s;
+  content: "\00ab";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
 }
 
 .button-b:hover span {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 .button-b:hover span:after {
-    opacity: 1;
-    left: 0;
+  opacity: 1;
+  left: 0;
 }
-
