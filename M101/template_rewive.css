@@ -96,8 +96,6 @@ iframe {
 }
 #Images {
     grid-area: Images;
-    background-color: lightgreen;
-    background-image: url('Missing_texture.png');
     background-size: cover;
     border-radius: 10px;
     border-width: 5px;
@@ -106,14 +104,13 @@ iframe {
     box-shadow: #000000 5px 5px 15px;
     max-width: 50vw;
     max-height: 40vw;
+    overflow:hidden;
 
 }
 .mySlides {
     width: 100%;
-    height: auto;
-    overflow:hidden;
+    height: 100%;
     object-fit: cover;
-
 }
 .w3-display-right {
     position: absolute;
