@@ -1,84 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="template_review.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
-</head>
-<body>
-    <Nav>
-        <button class="button-b"><span>Back </span></button>
-        <a href="index.html"><h2>RBN</h2></a>
-        <button class="button-m"><span>More </span></button>
-    </Nav>
+    <link rel="stylesheet" href="template_review.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <button class="button-b"><span>Back </span></button>
+      <a href="index.html"><h2>RBN</h2></a>
+      <button class="button-m"><span>More </span></button>
+    </nav>
     <main>
-        <div id="grid-container">
-            <div id="MainImage">
-                <h1 id="GameTitle">Game Title</h1>
-            </div>
-            <div id="Trailers">
-                <iframe src="https://www.youtube.com/embed/YAgJ9XugGBo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div id="Images">
-                <div class="w3-content w3-display-container">
-                    <img class="mySlides" src="https://cdn.displate.com/artwork/857x1200/2024-05-12/95df36c5925f531812ef706fcdd78638_c3df64b1d5e49739c7c9359554a6e102.jpg">
-                    <img class="mySlides" src="https://i0.wp.com/tshirtatlowprice.com/wp-content/uploads/2025/06/Fih-Funny-Misspelled-Fish-Meme.jpg?ssl=1">
-                    <img class="mySlides" src="https://content.imageresizer.com/images/memes/Shooketh-meme-1.jpg">
-                    <img class="mySlides" src="https://i.pinimg.com/736x/5b/3b/98/5b3b9891312d5734fcc114cc7243c14d.jpg">
-
-                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                </div>
-            <script>
-                var slideIndex = 1;
-                showDivs(slideIndex);
-
-                function plusDivs(n) {
-                    showDivs(slideIndex += n);
-                }
-
-                function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    if (n > x.length) {slideIndex = 1}
-                    if (n < 1) {slideIndex = x.length}
-                    for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-                    x[slideIndex-1].style.display = "block";  
-                }
-            </script>
-            </div>
-            <div id="description">
-                <div id ="descriptionText">
-                    <h1>Description</h1>
-                    <p>Erleben Sie ein episches Abenteuer in einer offen Welt voller Geheimnisse und Herausforderungen. Dieses Spiel bietet atemberaubende Grafiken und ein fesselndes Gameplay, das Sie stundenlang unterhalten wird. Tauchen Sie ein in eine faszinierende Geschichte und entdecken Sie eine Welt voller Möglichkeiten.</p>
-                </div>
-            </div>
-            <div id="UserReview">
-                <div>
-                    <h1>User Reviews</h1>
-                    <p  id="UserReviewText">Ich liebe dieses Spiel! Die Grafiken sind unglaublich und die Geschichte ist so fesselnd. Ich habe stundenlang gespielt und konnte nicht aufhören. Einziger Nachteil sind einige Bugs, die manchmal das Gameplay beeinträchtigen. Aber insgesamt ist es ein fantastisches Spiel. 5 von 5 Sternen von mir!</p>
-                </div>
-            </div>
-            <div id="ourReview">
-                <div>
-                    <h1>Our Review</h1>
-                    <p id="ourReviewText">Dieses Spiel hat uns wirklich beeindruckt. Die Grafiken sind atemberaubend und das Gameplay ist fesselnd. Die Geschichte ist gut geschrieben und hält einen von Anfang bis Ende in Atem. Allerdings gibt es einige technische Probleme, die hoffentlich in zukünftigen Updates behoben werden. Insgesamt vergeben wir 4 von 5 Sternen.</p>
-                </div>
-            </div>
+      <div id="grid-container">
+        <div id="MainImage">
+          <h1 id="GameTitle">Game Title</h1>
         </div>
+        <div id="Trailers">
+          <iframe
+            src="https://www.youtube.com/embed/YAgJ9XugGBo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="Images">
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="https://cdn.displate.com/artwork/857x1200/2024-05-12/95df36c5925f531812ef706fcdd78638_c3df64b1d5e49739c7c9359554a6e102.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://i0.wp.com/tshirtatlowprice.com/wp-content/uploads/2025/06/Fih-Funny-Misspelled-Fish-Meme.jpg?ssl=1"
+            />
+            <img
+              class="mySlides"
+              src="https://content.imageresizer.com/images/memes/Shooketh-meme-1.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://i.pinimg.com/736x/5b/3b/98/5b3b9891312d5734fcc114cc7243c14d.jpg"
+            />
+
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+        <div id="description">
+          <div id="descriptionText">
+            <h1>Description</h1>
+            <p>
+              Erleben Sie ein episches Abenteuer in einer offen Welt voller
+              Geheimnisse und Herausforderungen. Dieses Spiel bietet
+              atemberaubende Grafiken und ein fesselndes Gameplay, das Sie
+              stundenlang unterhalten wird. Tauchen Sie ein in eine
+              faszinierende Geschichte und entdecken Sie eine Welt voller
+              Möglichkeiten.
+            </p>
+          </div>
+        </div>
+        <div id="UserReview">
+          <div>
+            <h1>User Reviews</h1>
+            <p id="UserReviewText">
+              Ich liebe dieses Spiel! Die Grafiken sind unglaublich und die
+              Geschichte ist so fesselnd. Ich habe stundenlang gespielt und
+              konnte nicht aufhören. Einziger Nachteil sind einige Bugs, die
+              manchmal das Gameplay beeinträchtigen. Aber insgesamt ist es ein
+              fantastisches Spiel. 5 von 5 Sternen von mir!
+            </p>
+          </div>
+        </div>
+        <div id="ourReview">
+          <div>
+            <h1>Our Review</h1>
+            <p id="ourReviewText">
+              Dieses Spiel hat uns wirklich beeindruckt. Die Grafiken sind
+              atemberaubend und das Gameplay ist fesselnd. Die Geschichte ist
+              gut geschrieben und hält einen von Anfang bis Ende in Atem.
+              Allerdings gibt es einige technische Probleme, die hoffentlich in
+              zukünftigen Updates behoben werden. Insgesamt vergeben wir 4 von 5
+              Sternen.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-        <p><a id="footer" href="https://www.youtube.com/watch?v=YAgJ9XugGBo">© 2025 RBN. All rights reserved.</a></p>
+      <p>
+        <a id="footer" href="https://www.youtube.com/watch?v=YAgJ9XugGBo"
+          >© 2025 RBN. All rights reserved.</a
+        >
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
