@@ -20,6 +20,27 @@ h1 {
   text-shadow: 0 2px 8px #0005;
 }
 
+/* Unterüberschriften */
+h2, h3, h4 {
+  color: #a1cfff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-shadow: 0 1px 4px #0003;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.05rem;
+}
+
 /* Absätze */
 p {
   background: #2e3440;
@@ -27,8 +48,24 @@ p {
   padding: 1.2rem 2rem;
   margin: 1.2rem 0;
   box-shadow: 0 2px 12px #0002;
-  max-width: 500px;
+  max-width: 700px;
   line-height: 1.7;
+  font-size: 1.08rem;
+}
+
+/* Listen */
+ul, ol {
+  background: #2e3440;
+  border-radius: 1rem;
+  padding: 1.2rem 2rem 1.2rem 2.5rem;
+  margin: 1.2rem 0;
+  box-shadow: 0 2px 12px #0002;
+  max-width: 700px;
+  font-size: 1.08rem;
+}
+
+li {
+  margin-bottom: 0.7em;
 }
 
 /* Links */
@@ -36,6 +73,7 @@ a {
   color: #5fa8d3;
   text-decoration: none;
   transition: color 0.2s;
+  word-break: break-all;
 }
 
 a:hover {
@@ -44,13 +82,26 @@ a:hover {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   h1 {
     font-size: 1.5rem;
   }
-  p {
+  h2 {
+    font-size: 1.2rem;
+  }
+  p, ul, ol {
     padding: 1rem;
     font-size: 1rem;
     max-width: 95vw;
   }
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  color: #888;
+  font-size: 0.95rem;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 2rem;
 }
