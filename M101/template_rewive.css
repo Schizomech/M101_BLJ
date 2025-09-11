@@ -15,7 +15,7 @@
 }
 
 body {
-    background-image: url('Missing_texture.png');
+    background-image: url('https://web-assets.bcg.com/8e/cf/276ec569492cb6f13a8b56061b35/what-is-water-really-worth-report-rectangle.jpg');
     background-size: cover;
 }
 a {
@@ -104,8 +104,35 @@ iframe {
     border-style: solid;
     border-color: rgb(207, 66, 0);
     box-shadow: #000000 5px 5px 15px;
+    max-width: 50vw;
+    max-height: 40vw;
+
 }
-.mySlides {display:none;}
+.mySlides {
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    object-fit: cover;
+
+}
+.w3-display-right {
+    position: absolute;
+    top: 130vh;
+    right: 1vw;
+    transform: translate(0%, -50%);
+    padding: 8px 16px;
+}
+.w3-display-left {
+    position: absolute;
+    top: 130vh;
+    left: 50vw;
+    transform: translate(0%, -50%);
+    padding: 8px 16px;
+}
+.w3-black {
+    color: #fff !important;
+    background-color: #000 !important;
+}
 #description {
     grid-area: description;
     background-color: #a6a2dd;
