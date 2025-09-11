@@ -3,51 +3,6 @@
   min-width: 100%;
 }
 
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
-}
-
 body {
   max-width: 100%;
   margin: 0 auto;
@@ -188,30 +143,6 @@ li {
   scroll-snap-align: center;
 }
 
-@media (hover: hover) {
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-
-  .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel__snapper {
-    animation-name: none;
-  }
-}
-
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
-  animation-name: none;
-}
-
 .carousel::before,
 .carousel::after {
   content: "";
@@ -235,17 +166,17 @@ li {
 }
 
 nav {
-  margin-bottom: 2rem;
-  text-align: center;
-  font-size: 1.2rem;
+  font-size: 3vw;
   background-color: #2c2d38;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  height: 100px;
-  border-color: #472c13;
+  height: fit-content;
+  border-color: #e64302;
   border-style: solid;
   border-width: 10px;
   box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.644);
+  text-align: center;
+  padding: 0 0 0 0;
 }
 
 Header {
@@ -289,4 +220,17 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #da4113;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(218, 98, 0);
+  padding: 0 2vw;
+  -webkit-text-stroke: 0.1vh #5f1e00;
+}
+
+a:hover {
+  color: #c40303;
+  transition: 0.1s;
+  -webkit-text-stroke: 0.1vh #000000;
 }
