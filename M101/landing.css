@@ -102,28 +102,42 @@ li {
 }
 
 .carousel__slide:nth-child(2) {
-  background-image: url();
+  background-image: url(https://www.digitalcombatsimulator.com/upload/iblock/9aa/kgrop0smcc9l7hmoigq9jun1si5gkvgi/New_Eshop_coverDCS_v-23%20%281%29.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel__slide:nth-child(3) {
-  background-image: url();
-}
-
-.carousel__slide:nth-child(4) {
-  background-image: url();
+  background-image: url(https://vgjournal.net/media/uploads/games/images/2024/11-November/10/thumbnails/sea-power-naval-combat-in-the-missile-age__cover__library_600x900_2x.thumbnail.webp);
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel__slide:nth-child(5) {
-  background-image: url();
+  background-image: url(https://e.snmc.io/lk/lv/x/51939f27b220d46cb14ea84a1bc74b85/9243159);
+  background-size: cover;
+  background-position: center;
 }
 .carousel__slide:nth-child(6) {
-  background-image: url();
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Hollow_Knight_first_cover_art.webp/250px-Hollow_Knight_first_cover_art.webp.png);
+  background-size: cover;
+  background-position: center;
 }
 .carousel__slide:nth-child(7) {
-  background-image: url();
+  background-image: url(https://m.media-amazon.com/images/M/MV5BMGNhNTkzMjEtMGVlZi00NWY0LWIyNTAtMjBiZWE1YmM1OTg1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .carousel__slide:nth-child(8) {
-  background-image: url();
+  background-image: url(https://www.cloudgamingcatalogue.com/wp-content/uploads/2022/02/Ready-Or-Not.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#carousel__slide4 {
+  background-image: url(https://m.media-amazon.com/images/M/MV5BNzU3NWFmMmYtYjA4OS00YjQ2LTg5ZjctMzk2OGZhMWJiYzhhXkEyXkFqcGc@._V1_.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel__slide:before {
