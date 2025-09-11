@@ -32,6 +32,9 @@ a {
     padding-bottom: 0px;
     margin: 0px 0px;
 }
+h2 {
+    margin: 0px 0px;
+}
 #GameTitle {
     font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
@@ -52,18 +55,28 @@ Nav {
     border-radius: 10px;
     background-color: maroon;
     padding: 10px;
-
+    box-shadow: #000000 5px 5px 15px;
 }
 #MainImage {
     grid-area: MainImage;
     background-color: lightpink;
-    background-image: url('Missing_texture.png');
-    background-size: stretch;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPte_8tzXVbALCRVQkp7N2OYC3vrgF0XDZJA&s');
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(207, 66, 0);
+    box-shadow: #000000 5px 5px 15px;
 }
 #Trailers {
     grid-area: Trailers;
     background-color: lightblue;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(207, 66, 0);
+    box-shadow: #000000 5px 5px 15px;
 }
 #descriptionText {
     margin: 10px;
@@ -87,30 +100,53 @@ iframe {
     background-image: url('Missing_texture.png');
     background-size: cover;
     border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(207, 66, 0);
+    box-shadow: #000000 5px 5px 15px;
 }
+.mySlides {display:none;}
 #description {
     grid-area: description;
-    background-color: rgb(255, 171, 171);
+    background-color: #a6a2dd;
     border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(207, 66, 0);
+    box-shadow: #000000 5px 5px 15px;
 }
 #UserReview {
     grid-area: userreview;
-    background-color: lightyellow;
+    background-color: #a6a2dd;
     border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(207, 66, 0);
+    box-shadow: #000000 5px 5px 15px;
 }
 #ourReview {
     grid-area: ourreview;
-    background-color: lightpink;
+    background-color: #a6a2dd;
     border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(207, 66, 0);
+    box-shadow: #000000 5px 5px 15px;
 }
 footer {
     grid-area: footer;
-
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: #000000 5px 5px 15px;
+}
+#footer {
+    font-size: 4vw;
 }
 
 .button-b, .button-m {
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color: rgb(207, 66, 0);;
     border: none;
     color: #FFFFFF;
     text-align: center;

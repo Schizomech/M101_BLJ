@@ -27,11 +27,38 @@
                 <iframe src="https://www.youtube.com/embed/YAgJ9XugGBo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div id="Images">
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides" src="https://i.kym-cdn.com/entries/icons/facebook/000/045/346/Sacabambaspis.jpg" style="width:100%">
+                    <img class="mySlides" src="https://i0.wp.com/tshirtatlowprice.com/wp-content/uploads/2025/06/Fih-Funny-Misspelled-Fish-Meme.jpg?ssl=1" style="width:100%">
+                    <img class="mySlides" src="https://content.imageresizer.com/images/memes/Shooketh-meme-1.jpg" style="width:100%">
+                    <img class="mySlides" src="https://i.pinimg.com/736x/5b/3b/98/5b3b9891312d5734fcc114cc7243c14d.jpg" style="width:100%">
 
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
             </div>
             <div id="description">
                 <div id ="descriptionText">
-                    <h1>description</h1>
+                    <h1>Description</h1>
                     <p>Erleben Sie ein episches Abenteuer in einer offen Welt voller Geheimnisse und Herausforderungen. Dieses Spiel bietet atemberaubende Grafiken und ein fesselndes Gameplay, das Sie stundenlang unterhalten wird. Tauchen Sie ein in eine faszinierende Geschichte und entdecken Sie eine Welt voller Möglichkeiten.</p>
                 </div>
             </div>
@@ -50,7 +77,7 @@
         </div>
     </main>
     <footer>
-        <p><a href="https://www.youtube.com/watch?v=YAgJ9XugGBo">Footer</a></p>
+        <p><a id="footer" href="https://www.youtube.com/watch?v=YAgJ9XugGBo">© 2025 RBN. All rights reserved.</a></p>
     </footer>
 
 </body>
