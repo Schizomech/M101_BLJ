@@ -319,3 +319,12 @@ Header {
   padding: 0 0 20% 2%;
   -webkit-text-stroke: 0.2vw #5f1e00;
 }
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+  padding: 1rem 0;
+  border-top: 1px solid #444;
+}
