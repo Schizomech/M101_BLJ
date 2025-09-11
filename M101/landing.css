@@ -1,3 +1,10 @@
+.container {
+  background-color: #2c3169;
+  min-width: 100%;
+}
+
+
+
 @keyframes tonext {
   75% {
     left: 0;
@@ -46,7 +53,8 @@
 body {
   max-width: 100%;
   margin: 0 auto;
-  padding: 1%;
+  padding: 0
+  ;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #6873fa;
 }
@@ -162,8 +170,22 @@ li {
   transition: box-shadow 0.2s;
 }
 
-.carousel__slide:nth-child(even) {
-  background-color: #99f;
+.carousel__slide:nth-child(1) {
+  background-image: url(https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_616x353.jpg?t=1748630546);
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel__slide:nth-child(2) {
+  background-image: url();
+}
+
+.carousel__slide:nth-child(3) {
+  background-image: url();
+}
+
+.carousel__slide:nth-child(4) {
+  background-image: url();
 }
 
 .carousel__slide:before {
@@ -254,3 +276,18 @@ li {
 .carousel::after {
   background-image: url();
 }
+
+nav {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #2c3169;
+  border-radius: 15px;
+  height: 100px;
+  width: 100%;
+  border-color: #595eaa;
+  border-style: solid;
+  border-width: 10px;
+  box-shadow: 0 4px 24px #0002;
+
+  }
