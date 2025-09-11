@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header><H1>RBN</H1></header>
+    <header><H1 id="RBN">RBN</H1></header>
     <nav><a href="">Latest News</a> <a href="">Recent Reviews</a></nav>
-    <section class="intro">
-            <h2>Welcome to RBN</h2>
-            <p>Your go-to source for the latest news and reviews in the Gaming world.</p>
-    </section>
+ <div class="container">
     <section class="carousel" aria-label="Gallery">
   <ol class="carousel__viewport">
     <li id="carousel__slide1"
@@ -58,8 +58,38 @@
       <div class="carousel__snapper"></div>
       <a href="#carousel__slide4"
          class="carousel__prev"></a>
-      <a href="#carousel__slide1"
+      <a href="#carousel__slide6"
          class="carousel__next"></a>
+    </li>
+    <li id="carousel__slide6"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide5"
+           class="carousel__prev"></a>
+        <a href="#carousel__slide7"
+           class="carousel__next"></a>
+      </div>
+    </li>
+    <li id="carousel__slide7"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide6"
+           class="carousel__prev"></a>
+        <a href="#carousel__slide8"
+           class="carousel__next"></a>
+      </div>
+    </li>
+    <li id="carousel__slide8"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide7"
+           class="carousel__prev"></a>
+        <a href="#carousel__slide1"
+           class="carousel__next"></a>
+      </div>
     </li>
   </ol>
   <aside class="carousel__navigation">
@@ -80,8 +110,24 @@
         <a href="#carousel__slide4"
            class="carousel__navigation-button"></a>
       </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide5"
+           class="carousel__navigation-button"></a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide6"
+           class="carousel__navigation-button"></a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide7"
+           class="carousel__navigation-button"></a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide8"
+           class="carousel__navigation-button"></a>
+      </li>
     </ol>
   </aside>
-
+ </div>
 </body>
 </html>
