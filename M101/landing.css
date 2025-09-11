@@ -3,8 +3,6 @@
   min-width: 100%;
 }
 
-
-
 @keyframes tonext {
   75% {
     left: 0;
@@ -53,33 +51,9 @@
 body {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0
-  ;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #252525;
-}
-
-* {
-  box-sizing: border-box;
-  scrollbar-color: transparent transparent;
-  scrollbar-width: 0px;
-}
-
-*::-webkit-scrollbar {
-  width: 0;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
-* {
-  -ms-overflow-style: none;
 }
 
 ol,
@@ -105,7 +79,6 @@ li {
   display: flex;
   overflow-x: auto;
   overflow-y: auto;
-  counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   gap: 2vw;
@@ -123,7 +96,6 @@ li {
     min-height: fit-content;
     min-width: fit-content;
     background-color: rgb(36, 37, 48);
-    counter-increment: item;
   }
 }
 
@@ -136,7 +108,6 @@ li {
     min-height: fit-content;
     min-width: fit-content;
     background-color: rgb(41, 44, 49);
-    counter-increment: item;
   }
 }
 
@@ -151,7 +122,6 @@ li {
     min-height: fit-content;
     min-width: fit-content;
     background-color: rgb(36, 44, 59);
-    counter-increment: item;
   }
 }
 
@@ -242,31 +212,6 @@ li {
   animation-name: none;
 }
 
-.carousel__navigation {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
-.carousel__navigation-list,
-.carousel__navigation-item {
-  display: inline-block;
-}
-
-.carousel__navigation-button {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #333;
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  border-radius: 50%;
-  font-size: 0;
-  transition: transform 0.1s;
-}
-
 .carousel::before,
 .carousel::after {
   content: "";
@@ -297,12 +242,11 @@ nav {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   height: 100px;
-  width: 100%;
   border-color: #472c13;
   border-style: solid;
   border-width: 10px;
   box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.644);
-  }
+}
 
 Header {
   color: rgb(207, 66, 0);
@@ -326,5 +270,23 @@ footer {
   font-size: 1rem;
   color: #aaa;
   padding: 1rem 0;
-  border-top: 1px solid #444;
+  border-top: 1px solid #864800;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c2c2c200;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #868686;
+  border: none;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #da4113;
 }
