@@ -18,7 +18,7 @@ body {
     background-image: url('https://web-assets.bcg.com/8e/cf/276ec569492cb6f13a8b56061b35/what-is-water-really-worth-report-rectangle.jpg');
     background-size: cover;
 }
-a {
+.logo-font {
     text-decoration: none;
     border-radius: 10px;
     font-family: "Jersey 15", sans-serif;
@@ -53,9 +53,12 @@ Nav {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    background-color: maroon;
+    background-color: #252525;
     padding: 10px;
     box-shadow: #000000 5px 5px 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(207, 66, 0);
 }
 #MainImage {
     grid-area: MainImage;
@@ -80,15 +83,19 @@ Nav {
 }
 #descriptionText {
     margin: 10px;
+    color: white;
 }
 #UserReviewText {
     margin: 10px;
+    color: white;
 }
 #ourReviewText {
     text-align: center;
+    color:white;
 }
 h1 {
     text-align: center;
+    color: white;
 }
 iframe {
     width: 100%;
@@ -132,7 +139,7 @@ iframe {
 }
 #description {
     grid-area: description;
-    background-color: #a6a2dd;
+    background-color: #252525;;
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
@@ -141,7 +148,7 @@ iframe {
 }
 #UserReview {
     grid-area: userreview;
-    background-color: #a6a2dd;
+    background-color: #252525;;
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
@@ -150,7 +157,7 @@ iframe {
 }
 #ourReview {
     grid-area: ourreview;
-    background-color: #a6a2dd;
+    background-color: #252525;;
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
