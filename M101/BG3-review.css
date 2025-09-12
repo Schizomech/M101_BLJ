@@ -8,7 +8,7 @@
     "MainImage MainImage"
     "Trailers  Images"
     "description userreview"
-    "ourreview ourreview"
+    "description ourreview"
     "footer footer";
   grid-gap: 10px;
 }
@@ -81,14 +81,23 @@ Nav {
 #descriptionText {
     margin: 10px;
     color: white;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 10vh;
 }
 #UserReviewText {
     margin: 10px;
     color: white;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
 }
 #ourReviewText {
     text-align: center;
     color:white;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.5vw;
 }
 h1 {
     text-align: center;
