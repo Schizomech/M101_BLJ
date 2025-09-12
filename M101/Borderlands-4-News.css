@@ -44,7 +44,6 @@ h2 {
   margin-left: 10px;
   text-align: left;
   color: rgb(221, 0, 0);
-  -webkit-text-stroke: 0.2vw #5f1e00;
 }
 
 Nav {
@@ -97,7 +96,7 @@ Nav {
   text-align: center;
   color: rgb(255, 255, 255);
   font-family: arial, helvetica, sans-serif;
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 h1 {
