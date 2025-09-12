@@ -173,7 +173,7 @@ iframe {
 }
 footer {
   grid-area: footer;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.397);
   border-radius: 10px;
   text-align: center;
   box-shadow: #000000 5px 5px 15px;
