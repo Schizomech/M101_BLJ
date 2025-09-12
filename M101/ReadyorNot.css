@@ -8,28 +8,28 @@
     "MainImage MainImage"
     "Trailers  Images"
     "description userreview"
-    "ourreview ourreview"
+    "description ourreview"
     "footer footer";
   grid-gap: 10px;
 }
 
 body {
-  background-image: url("https://web-assets.bcg.com/8e/cf/276ec569492cb6f13a8b56061b35/what-is-water-really-worth-report-rectangle.jpg");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj44fvnqoMrAxJPMcoHsmOQ3PefZCx2glz-A&s");
   background-size: cover;
 }
 .logo-font {
-    text-decoration: none;
-    border-radius: 10px;
-    font-family: "Jersey 15", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5vw;
-    color: rgb(207, 66, 0);
-    -webkit-text-stroke: 0.2vw #5f1e00;
-    text-shadow: 2px 2px 4px #000000;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: 0px 0px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vw;
+  color: rgb(207, 41, 0);
+  -webkit-text-stroke: 0.2vw #5f1e00;
+  text-shadow: 2px 2px 4px #000000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px 0px;
 }
 h2 {
   margin: 0px 0px;
@@ -46,16 +46,16 @@ h2 {
 }
 
 Nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #252525;
-    padding: 10px;
-    box-shadow: #000000 5px 5px 15px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #25252579;
+  padding: 10px;
+  box-shadow: #000000 5px 5px 15px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 24, 0);
 }
 #MainImage {
   grid-area: MainImage;
@@ -66,7 +66,7 @@ Nav {
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgb(207, 66, 0);
+  border-color: rgb(207, 24, 0);
   box-shadow: #000000 5px 5px 15px;
 }
 #Trailers {
@@ -75,24 +75,33 @@ Nav {
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgb(207, 66, 0);
+  border-color: rgb(207, 24, 0);
   box-shadow: #000000 5px 5px 15px;
 }
 #descriptionText {
-    margin: 10px;
-    color: white;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.5vw;
 }
 #UserReviewText {
-    margin: 10px;
-    color: white;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
 }
 #ourReviewText {
-    text-align: center;
-    color:white;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
 }
 h1 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: arial, helvetica, sans-serif;
 }
 iframe {
   width: 100%;
@@ -104,7 +113,7 @@ iframe {
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgb(207, 66, 0);
+  border-color: rgb(207, 24, 0);
   box-shadow: #000000 5px 5px 15px;
   max-width: 50vw;
   max-height: 40vw;
@@ -136,35 +145,35 @@ iframe {
   background-color: #000 !important;
 }
 #description {
-    grid-area: description;
-    background-color: #252525;;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
-    box-shadow: #000000 5px 5px 15px;
+  grid-area: description;
+  background-color: #252525d2;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 24, 0);
+  box-shadow: #000000 5px 5px 15px;
 }
 #UserReview {
-    grid-area: userreview;
-    background-color: #252525;;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
-    box-shadow: #000000 5px 5px 15px;
+  grid-area: userreview;
+  background-color: #252525d2;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 24, 0);
+  box-shadow: #000000 5px 5px 15px;
 }
 #ourReview {
-    grid-area: ourreview;
-    background-color: #252525;;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(207, 66, 0);
-    box-shadow: #000000 5px 5px 15px;
+  grid-area: ourreview;
+  background-color: #252525d2;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(207, 24, 0);
+  box-shadow: #000000 5px 5px 15px;
 }
 footer {
   grid-area: footer;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.521);
   border-radius: 10px;
   text-align: center;
   box-shadow: #000000 5px 5px 15px;
@@ -176,7 +185,7 @@ footer {
 .button-b,
 .button-m {
   border-radius: 4px;
-  background-color: rgb(207, 66, 0);
+  background-color: rgb(207, 24, 0);
   border: none;
   color: #ffffff;
   text-align: center;
