@@ -454,3 +454,30 @@ a:hover {
   font-weight: 400;
   font-style: normal;
 }
+
+#rotate-popup {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(30,32,40,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate-popup-content {
+  background: #23272f;
+  color: #f3f3f3;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px #000a;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  max-width: 90vw;
+  font-size: 1.2rem;
+}
+
+#rotate-popup h2 {
+  color: #ff9800;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
