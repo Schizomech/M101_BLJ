@@ -448,15 +448,7 @@ a:hover {
   -webkit-text-stroke: 0.1vh #5f1e00;
   border: 6px solid rgb(250, 71, 0);
 }
-#news {
-  font-family: "Lacquer", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(221, 170, 4);
-  -webkit-text-stroke: 0.2vw #af0000;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 4vw
-}
+
 .lacquer-regular {
   font-family: "Lacquer", system-ui;
   font-weight: 400;
