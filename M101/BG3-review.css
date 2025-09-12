@@ -50,12 +50,12 @@ Nav {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    background-color: #252525;
+    background-color: #2525257c;
     padding: 10px;
     box-shadow: #000000 5px 5px 15px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgb(207, 66, 0);
+    border-color: rgb(84, 86, 214);
 }
 #MainImage {
   grid-area: MainImage;
@@ -66,7 +66,7 @@ Nav {
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgb(207, 66, 0);
+  border-color: rgb(84, 86, 214);
   box-shadow: #000000 5px 5px 15px;
 }
 #Trailers {
@@ -75,7 +75,7 @@ Nav {
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgb(207, 66, 0);
+  border-color: rgb(84, 86, 214);
   box-shadow: #000000 5px 5px 15px;
 }
 #descriptionText {
@@ -113,7 +113,7 @@ iframe {
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgb(207, 66, 0);
+  border-color: rgb(84, 86, 214);
   box-shadow: #000000 5px 5px 15px;
   max-width: 50vw;
   max-height: 40vw;
@@ -150,7 +150,7 @@ iframe {
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgb(207, 66, 0);
+    border-color: rgb(84, 86, 214);
     box-shadow: #000000 5px 5px 15px;
 }
 #UserReview {
@@ -159,7 +159,7 @@ iframe {
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgb(207, 66, 0);
+    border-color: rgb(84, 86, 214);
     box-shadow: #000000 5px 5px 15px;
 }
 #ourReview {
@@ -168,7 +168,7 @@ iframe {
     border-radius: 10px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgb(207, 66, 0);
+    border-color: rgb(84, 86, 214);
     box-shadow: #000000 5px 5px 15px;
 }
 footer {
@@ -185,7 +185,7 @@ footer {
 .button-b,
 .button-m {
   border-radius: 4px;
-  background-color: rgb(207, 66, 0);
+  background-color: rgb(84, 86, 214);
   border: none;
   color: #ffffff;
   text-align: center;
