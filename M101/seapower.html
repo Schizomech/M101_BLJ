@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sea Power</title>
+    <link rel="stylesheet" href="seapower.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"
+        ><button class="button-b" href="index.html">
+          <span>Back </span>
+        </button></a
+      >
+      <a href="index.html" class="logo-font"><h2>RBN</h2></a>
+      <a href="index.html"
+        ><button class="button-m"><span>More </span></button></a
+      >
+    </nav>
+    <main>
+      <div id="grid-container">
+        <div id="MainImage">
+          <h1 id="GameTitle">SEA POWER: <br> NAVAL WARFARE <br> IN THE MISSILE AGE</h1>
+        </div>
+        <div id="Trailers">
+          <iframe
+            src="https://youtu.be/VG5wPww1HqQ?si=9eXlH_Rj_dVxVVHB"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <!-----------------------------------------------------------------Slideshow--------------------------------------------------------------------------------------->
+        <div id="Images">
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286220/ss_9b12de524b85edc690a2c67e40287fbb1ef0d5bc.600x338.jpg?t=1756362511"
+            />
+            <img
+              class="mySlides"
+              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286220/ss_e2a0f5664e79dd9edbd27cc9c19b1ca3623f7788.600x338.jpg?t=1756362511"
+            />
+            <img
+              class="mySlides"
+              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286220/ss_43806259937f2820e2266d74c49fb54e197fafb5.600x338.jpg?t=1756362511"
+            />
+            <img
+              class="mySlides"
+              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1286220/ss_c6daf8ee026a5c6d003bbeaacc4825b69d357e11.600x338.jpg?t=1756362511"
+            />
+
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+          <!-------------------------------------------------------------end----Slideshow--------------------------------------------------------------------------------------->
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+        <div id="description">
+          <div id="descriptionText">
+            <h1>Description</h1>
+            <p>
+              Sea Power ist ein fesselndes Marinesimulationsspiel, das die
+              strategische Tiefe und taktische Herausforderungen der
+              Seekriegsführung in einem realistischen und immersiven Umfeld
+              bietet. Spieler übernehmen die Kontrolle über eine Vielzahl von
+              Kriegsschiffen, von Zerstörern bis hin zu Flugzeugträgern, und
+              müssen strategische Entscheidungen treffen, um in verschiedenen
+              Szenarien erfolgreich zu sein. Das Spiel besticht durch seine
+              detaillierte Grafik, realistische Physik und eine Vielzahl von
+              Missionen. Sea Power bietet stundenlangen Spielspaß für Fans von
+              Militärsimulationen und Strategiespielen gleichermaßen.
+            </p>
+          </div>
+        </div>
+        <div id="UserReview">
+          <div>
+            <h1>User Reviews</h1>
+            <p id="UserReviewText">
+              "Sea Power hat mich wirklich beeindruckt! Die Grafik ist
+              atemberaubend und die Steuerung der Schiffe fühlt sich sehr
+              realistisch an. Die verschiedenen Missionen bieten eine gute
+              Abwechslung und erfordern strategisches Denken. Besonders gefallen
+              hat mir die Möglichkeit, verschiedene Schiffstypen zu steuern und
+              ihre individuellen Stärken und Schwächen zu nutzen. Die Community
+              ist auch sehr aktiv und es gibt viele Mods, die das Spielerlebnis
+              erweitern. Insgesamt ein tolles Spiel für alle, die sich für
+              Marine- und Kriegssimulationen interessieren!"
+            </p>
+          </div>
+        </div>
+        <div id="ourReview">
+          <div>
+            <h1>Our Review</h1>
+            <p id="ourReviewText">
+              Sea Power ist ein beeindruckendes Marinesimulationsspiel, das
+              durch seine realistische Darstellung und strategische Tiefe
+              besticht. Die Grafik ist atemberaubend und die Steuerung der
+              Schiffe fühlt sich authentisch an, was das Spielerlebnis enorm
+              bereichert. Die Vielzahl an Missionen und die Möglichkeit,
+              verschiedene Schiffstypen zu steuern, sorgen für Abwechslung und
+              fordern taktisches Denken.<br /><br />
+              Besonders hervorzuheben ist die aktive Community, die durch Mods
+              das Spielerlebnis weiter verbessert und erweitert. Sea Power
+              bietet sowohl für Fans von Militärsimulationen als auch für
+              Strategieliebhaber stundenlangen Spielspaß. Insgesamt ist Sea
+              Power eine gelungene Mischung aus Realismus und Unterhaltung, die
+              jedem, der sich für Marine- und Kriegssimulationen interessiert,
+              wärmstens empfohlen werden kann.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a id="footer" class="logo-font" href="Datenschutz.html"
+          >© 2025 RBN. All rights reserved.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
