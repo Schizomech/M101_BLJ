@@ -139,9 +139,9 @@ li {
   background-size: cover;
   background-position: center;
 }
-
+/* ----------------------------------------------------------------------------------- Carousel 2------------------------------------------------------------------- */
 #carousel2__slide1 {
-  background-image: url(https://i0.wp.com/tshirtatlowprice.com/wp-content/uploads/2025/06/Fih-Funny-Misspelled-Fish-Meme.jpg?ssl=1);
+  background-image: url(https://cdn1.epicgames.com/spt-assets/20d989fc07a447b2af3c59e4fd5f49c7/borderlands-4-fnnpo.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -447,4 +447,22 @@ a:hover {
   color: rgb(218, 98, 0);
   -webkit-text-stroke: 0.1vh #5f1e00;
   border: 6px solid rgb(250, 71, 0);
+}
+#news {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vw;
+  color: rgb(221, 170, 4);
+  -webkit-text-stroke: 0.2vw #af0000;
+  text-shadow: 2px 2px 4px #000000;
+  padding-top: 50vh;
+  padding-bottom: 0px;
+  padding-left: 10vw;
+  margin: 0px 0px;;
+}
+.lacquer-regular {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
