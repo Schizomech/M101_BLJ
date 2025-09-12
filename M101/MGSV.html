@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MGSV</title>
+    <link rel="stylesheet" href="MGSV.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"
+        ><button class="button-b" href="index.html">
+          <span>Back </span>
+        </button></a
+      >
+      <a href="index.html" class="logo-font"><h2>RBN</h2></a>
+      <a href="index.html"
+        ><button class="button-m"><span>More </span></button></a
+      >
+    </nav>
+    <main>
+      <div id="grid-container">
+        <div id="MainImage">
+          <h1 id="GameTitle"></h1>
+        </div>
+        <div id="Trailers">
+          <iframe
+            src="https://youtu.be/5zvhMqU9QKE?si=n270M3wUsJJkPdiG"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <!-----------------------------------------------------------------Slideshow--------------------------------------------------------------------------------------->
+        <div id="Images">
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_208e1d631754733bf659f6d454121de773ca34ba.600x338.jpg?t=1727849445"
+            />
+            <img
+              class="mySlides"
+              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_8d3e8949591899054dc0ae7e56dc04ddab5ba7b5.600x338.jpg?t=1727849445"
+            />
+            <img
+              class="mySlides"
+              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_0b38ffb37180ffbadcc0c1d645f65b59c5861d1b.600x338.jpg?t=1727849445"
+            />
+            <img
+              class="mySlides"
+              src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287700/ss_04bb51876cf847de850107b183afc2baab0569d8.600x338.jpg?t=1727849445"
+            />
+
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+          <!-------------------------------------------------------------end----Slideshow--------------------------------------------------------------------------------------->
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+        <div id="description">
+          <div id="descriptionText">
+            <h1>Description</h1>
+            <p>
+              Metal Gear Solid V: The Phantom Pain ist ein Action-Adventure- und
+              Stealth-Spiel, das von Kojima Productions entwickelt und von
+              Konami veröffentlicht wurde. Es ist der fünfte Teil der Metal Gear
+              Solid-Serie und spielt in einer offenen Welt, die im Jahr 1984
+              angesiedelt ist. Der Spieler übernimmt die Rolle von Venom Snake,
+              einem Söldnerführer, der aus dem Koma erwacht und sich auf eine
+              Mission begibt, um Rache zu nehmen und die Wahrheit hinter den
+              Ereignissen zu erfahren, die zu seinem Zustand geführt haben. Das
+              Spiel bietet eine Mischung aus Stealth-Mechaniken, taktischem
+              Gameplay und einer tiefgründigen Handlung. Der Spieler kann
+              verschiedene Missionen in einer offenen Welt absolvieren, die es
+              ihm ermöglicht, seine eigenen Strategien zu entwickeln und
+              verschiedene Ansätze zu wählen, um seine Ziele zu erreichen. Metal
+              Gear Solid V: The Phantom Pain wurde für seine beeindruckende
+              Grafik, sein detailliertes Gameplay und seine fesselnde Handlung
+              gelobt. Es bietet auch einen Mehrspielermodus namens Metal Gear
+              Online, der es den Spielern ermöglicht, gegeneinander anzutreten
+              und verschiedene Spielmodi zu genießen. Insgesamt ist Metal Gear
+              Solid V: The Phantom Pain ein hochgelobtes Spiel, das sowohl Fans
+              der Serie als auch neue Spieler anspricht.
+            </p>
+          </div>
+        </div>
+        <div id="UserReview">
+          <div>
+            <h1>User Reviews</h1>
+            <p id="UserReviewText">
+                "Metal Gear Solid V: The Phantom Pain ist ein Meisterwerk der
+                Videospielkunst. Die offene Welt bietet unzählige Möglichkeiten,
+                Missionen zu erfüllen, und die Stealth-Mechaniken sind so
+                ausgefeilt, dass sie dem Spieler zahlreiche strategische Optionen
+                bieten. Die Charaktere sind gut entwickelt und die Handlung ist
+                fesselnd, was das Spielerlebnis noch intensiver macht."
+            </p>
+          </div>
+        </div>
+        <div id="ourReview">
+          <div>
+            <h1>Our Review</h1>
+            <p id="ourReviewText">
+                "Metal Gear Solid V: The Phantom Pain ist ein herausragendes Spiel,
+                das die Erwartungen der Fans der Serie übertrifft. Die offene Welt
+                ist atemberaubend gestaltet und bietet eine Vielzahl von
+                Missionen, die den Spieler immer wieder herausfordern. Die
+                Stealth-Mechaniken sind tiefgründig und ermöglichen es dem Spieler,
+                seine eigenen Strategien zu entwickeln. Die Handlung ist komplex
+                und fesselnd, mit gut entwickelten Charakteren, die das
+                Spielerlebnis bereichern. Insgesamt ist Metal Gear Solid V: The
+                Phantom Pain ein Muss für jeden Fan von "Action-Adventure-Spielen".
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a id="footer" class="logo-font" href="Datenschutz.html"
+          >© 2025 RBN. All rights reserved.
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
