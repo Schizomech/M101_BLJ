@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Romeo</title>
+    <link rel="stylesheet" href="MusicRomeo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"
+        ><button class="button-b" href="index.html">
+          <span>Back </span>
+        </button></a
+      >
+      <a href="index.html" class="logo-font"><h2>RBN</h2></a>
+      <a href="index.html"
+        ><button class="button-m"><span>More </span></button></a
+      >
+    </nav>
+    <main>
+      <div id="grid-container">
+        <div id="MainImage">
+          <h1 id="GameTitle">
+            MusicRomeo  
+          </h1>
+        </div>
+        <!-----------------------------------------------------------------Slideshow--------------------------------------------------------------------------------------->
+        <div id="Images">
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="https://reforger.armaplatform.com/content/wallpapers/06.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://reforger.armaplatform.com/content/screenshots/version1.0/checkpoint-convoy.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://reforger.armaplatform.com/content/screenshots/version1.0/helicopters-soldiers.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://reforger.armaplatform.com/content/wallpapers/04.jpg"
+            />
+
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+          <!-------------------------------------------------------------end----Slideshow--------------------------------------------------------------------------------------->
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+        <div id="description">
+          <div id="descriptionText">
+            <h1>Description</h1>
+            <p>
+              Arma Reforger ist ein taktischer Militär-Shooter, der in einer
+              offenen Welt spielt und von Bohemia Interactive entwickelt wurde.
+              Das Spiel bietet realistische Waffen- und Fahrzeugmechaniken sowie
+              eine Vielzahl von Missionen und Spielmodi. Spieler können in Koop-
+              oder PvP-Modi gegeneinander antreten und ihre Fähigkeiten in
+              taktischen Gefechten unter Beweis stellen. Arma Reforger legt
+              großen Wert auf Realismus und Teamarbeit, was es zu einem
+              herausfordernden und immersiven Erlebnis macht. Mit der
+              leistungsstarken Enfusion-Engine bietet Arma Reforger
+              beeindruckende Grafiken und eine detaillierte Umgebung, die die
+              Spieler in die Welt des Spiels eintauchen lässt. Das Spiel
+              unterstützt auch Modding, was es der Community ermöglicht, eigene
+              Inhalte zu erstellen und zu teilen. Insgesamt ist Arma Reforger
+              ein spannendes und anspruchsvolles Spiel für Fans von
+              Militärsimulationen und taktischen Shootern.
+            </p>
+          </div>
+        </div>
+        <div id="UserReview">
+          <div>
+            <h1>User Reviews</h1>
+            <p id="UserReviewText">
+              "Arma Reforger ist ein beeindruckendes Spiel, das die Essenz der
+              Arma-Serie einfängt. Die realistische Grafik und die detaillierten
+              Umgebungen schaffen eine immersive Spielerfahrung. Die Vielzahl an
+              Waffen und Fahrzeugen bietet eine breite Palette an taktischen
+              Möglichkeiten. Besonders hervorzuheben ist die engagierte
+              Community, die regelmäßig neue Mods und Inhalte bereitstellt. Ein
+              Muss für Fans von Militärsimulationen!"
+            </p>
+          </div>
+        </div>
+        <div id="ourReview">
+          <div>
+            <h1>Our Review</h1>
+            <p id="ourReviewText">
+              Arma Reforger überzeugt als moderner Militär-Shooter mit einer
+              beeindruckenden Grafik und einer offenen, detailreichen Welt, die
+              durch die neue Enfusion-Engine zum Leben erweckt wird. Die
+              realistischen Waffen- und Fahrzeugmechaniken sorgen für ein
+              authentisches und taktisch anspruchsvolles Spielerlebnis, das
+              sowohl Einsteiger als auch Veteranen der Arma-Reihe begeistert.<br /><br />
+              Besonders hervorzuheben ist die starke Modding-Unterstützung: Die
+              Community kann eigene Inhalte, Missionen und Erweiterungen
+              erstellen und teilen, was für eine enorme Vielfalt und
+              langanhaltenden Spielspaß sorgt. Die dynamischen Multiplayer-Modi
+              fördern Teamwork und strategisches Vorgehen, während regelmäßige
+              Updates und neue Inhalte das Spiel stetig weiterentwickeln.<br /><br />
+              Wer Wert auf Realismus, taktische
+              Tiefe und eine engagierte Community legt, findet hier einen
+              würdigen Nachfolger der beliebten Militärsimulation. Für Fans von
+              taktischen Shootern und Sandbox-Erfahrungen ist Arma Reforger
+              definitiv einen Blick wert!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a id="footer" class="logo-font" href="Datenschutz.html"
+          >© 2025 RBN. All rights reserved.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
