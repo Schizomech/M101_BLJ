@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="BG3-review.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><button class="button-b" href="index.html"><span>Back </span></button></a>
+      <a href="index.html" class="logo-font"><h2>RBN</h2></a>
+      <a href="index.html"><button class="button-m"><span>More </span></button></a>
+    </nav>
+    <main>
+      <div id="grid-container">
+        <div id="MainImage">
+          <h1 id="GameTitle"></h1>
+        </div>
+        <div id="Trailers">
+          <iframe
+            src="https://www.youtube.com/watch?v=XuCfkgaaa08"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+<!-----------------------------------------------------------------Slideshow--------------------------------------------------------------------------------------->
+        <div id="Images">
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="https://gaming-cdn.com/images/news/articles/2410/cover/1000x563/baldur-s-gate-3-fur-pc-mit-ultimativem-trailer-cover64cbc9833026e.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://www.digitec.ch/Files/7/5/3/0/1/0/7/4/UI-7.png"
+            />
+            <img
+              class="mySlides"
+              src="https://www.digitec.ch/Files/7/5/3/0/1/1/0/2/Baldurs-Gate-III_2023_06-11-23_001.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://cdn.unitycms.io/images/6V72lBjxq3g9Eru2Qq6yQe.jpg"
+            />
+
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+<!-------------------------------------------------------------end----Slideshow--------------------------------------------------------------------------------------->
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+        <div id="description">
+          <div id="descriptionText">
+            <h1>Description</h1>
+            <p>
+              Erleben Sie ein episches Abenteuer in einer offen Welt voller
+              Geheimnisse und Herausforderungen. Dieses Spiel bietet
+              atemberaubende Grafiken und ein fesselndes Gameplay, das Sie
+              stundenlang unterhalten wird. Tauchen Sie ein in eine
+              faszinierende Geschichte und entdecken Sie eine Welt voller
+              Möglichkeiten.
+            </p>
+          </div>
+        </div>
+        <div id="UserReview">
+          <div>
+            <h1>User Reviews</h1>
+            <p id="UserReviewText">
+              Ich liebe dieses Spiel! Die Grafiken sind unglaublich und die
+              Geschichte ist so fesselnd. Ich habe stundenlang gespielt und
+              konnte nicht aufhören. Einziger Nachteil sind einige Bugs, die
+              manchmal das Gameplay beeinträchtigen. Aber insgesamt ist es ein
+              fantastisches Spiel. 5 von 5 Sternen von mir!
+            </p>
+          </div>
+        </div>
+        <div id="ourReview">
+          <div>
+            <h1>Our Review</h1>
+            <p id="ourReviewText">
+              Dieses Spiel hat uns wirklich beeindruckt. Die Grafiken sind
+              atemberaubend und das Gameplay ist fesselnd. Die Geschichte ist
+              gut geschrieben und hält einen von Anfang bis Ende in Atem.
+              Allerdings gibt es einige technische Probleme, die hoffentlich in
+              zukünftigen Updates behoben werden. Insgesamt vergeben wir 4 von 5
+              Sternen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a id="footer" class="logo-font" href="Datenschutz.html"
+          >© 2025 RBN. All rights reserved.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
