@@ -452,14 +452,10 @@ a:hover {
   font-family: "Lacquer", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 5vw;
   color: rgb(221, 170, 4);
   -webkit-text-stroke: 0.2vw #af0000;
   text-shadow: 2px 2px 4px #000000;
-  padding-top: 50vh;
-  padding-bottom: 0px;
-  padding-left: 10vw;
-  margin: 0px 0px;;
+  font-size: 4vw
 }
 .lacquer-regular {
   font-family: "Lacquer", system-ui;
