@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Hollow-knight-review.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><button class="button-b" href="index.html"><span>Back </span></button></a>
+      <a href="index.html" class="logo-font"><h2>RBN</h2></a>
+      <a href="index.html"><button class="button-m"><span>More </span></button></a>
+    </nav>
+    <main>
+      <div id="grid-container">
+        <div id="MainImage">
+          <h1 id="GameTitle"></h1>
+        </div>
+        <div id="Trailers">
+          <iframe
+            src="https://www.youtube.com/watch?v=e8wHJsFEKAM"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+<!-----------------------------------------------------------------Slideshow--------------------------------------------------------------------------------------->
+        <div id="Images">
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="https://images-cdn.9gag.com/photo/a21rbPD_700b.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://spieleratgeber-nrw.de/wp-content/uploads/2023/01/Hollow-Knight-Screenshot-1.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://images.steamusercontent.com/ugc/1830166859704694118/9F1C04C8AEB93C594B3DF2B2165F6B1ACAB49D99/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+            />
+            <img
+              class="mySlides"
+              src="https://media.gq.com/photos/5b4f85bf80d4544fbe01ecc9/16:9/w_2560%2Cc_limit/hollow-night-review-gq-1.jpg"
+            />
+
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+<!-------------------------------------------------------------end----Slideshow--------------------------------------------------------------------------------------->
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+        <div id="description">
+          <div id="descriptionText">
+            <h1>Description</h1>
+            <p>
+              Hollow Knight ist ein Metroidvania-Spiel, das von dem unabhängigen australischen Entwickler Team Cherry entwickelt und veröffentlicht wurde. Das Spiel wurde 2017 veröffentlicht und spielt in einer unterirdischen Welt namens Hallownest, die von einer Vielzahl von Insekten und Monstern bewohnt wird. Der Spieler steuert einen namenlosen käferartigen Krieger, der Hallownest erkundet, um mächtige Artefakte und Schätze zu finden. Das Spiel ist bekannt für seine düstere Atmosphäre, seinen handgezeichneten Stil und seinen hohen Schwierigkeitsgrad. Hollow Knight bietet ein nichtlineares Gameplay, bei dem der Spieler unterschiedliche Wege erkunden und verschiedene Gegner und Bosse besiegen kann. Das Spiel hat auch einen tiefgründigen Soundtrack, der die Gefühle und die visuelle Stilistik des Spiels perfekt einfängt.
+          </div>
+        </div>
+        <div id="UserReview">
+          <div>
+            <h1>User Reviews</h1>
+            <p id="UserReviewText">
+              Hollow Knight hat überwiegend positive Bewertungen von Nutzern erhalten. Auf Steam hat das Spiel eine hohe Bewertung, was auf eine sehr hohe Zufriedenheit der Spieler hindeutet. Viele Nutzer loben die düstere Atmosphäre, den handgezeichneten Stil, die tiefgründige Geschichte und den hohen Schwierigkeitsgrad des Spiels. Einige Nutzer erwähnen auch, dass das Spiel einige frustrierende Momente hat, insbesondere wenn es um die Bosskämpfe geht, aber diese werden durch die insgesamt hohe Qualität des Spiels ausgeglichen.
+            </p>
+          </div>
+        </div>
+        <div id="ourReview">
+          <div>
+            <h1>Our Review</h1>
+            <p id="ourReviewText">
+              Hollow Knight ist ein Meisterwerk des Metroidvania-Genres. Es bietet eine tiefgründige und fesselnde Geschichte, eine düstere und faszinierende Spielwelt und ein herausforderndes Gameplay, das den Spieler ständig fordert. Das Spiel hat eine beeindruckende grafische Darstellung und einen hervorragenden Soundtrack, die zur Immersion beitragen. Trotz einiger frustrierender Momente und eines hohen Schwierigkeitsgrads ist Hollow Knight ein Spiel, das jeden Metroidvania-Fan begeistern wird.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a id="footer" class="logo-font" href="Datenschutz.html"
+          >© 2025 RBN. All rights reserved.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
