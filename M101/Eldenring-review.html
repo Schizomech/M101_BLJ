@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Eldenring-review.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><button class="button-b" href="index.html"><span>Back </span></button></a>
+      <a href="index.html" class="logo-font"><h2>RBN</h2></a>
+      <a href="index.html"><button class="button-m"><span>More </span></button></a>
+    </nav>
+    <main>
+      <div id="grid-container">
+        <div id="MainImage">
+          <h1 id="GameTitle">ELDEN RING</h1>
+        </div>
+        <div id="Trailers">
+          <iframe
+            src="https://www.youtube.com/watch?v=e8wHJsFEKAM"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+<!-----------------------------------------------------------------Slideshow--------------------------------------------------------------------------------------->
+        <div id="Images">
+          <div class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="https://res.cloudinary.com/cook-becker/image/fetch/q_auto:best,f_auto,w_1920,g_north/https://candb.com/site/candb/images/article/EldenRing01.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://images.t-online.de/2022/03/dphgR-BJ795O/0x0:3840x2160/fit-in/1920x0/screenshot-aus-elden-ring-malerisch-schoen-bisweilen-erinnern-die-spielszenen-an-traeumerische-gemaelde-von-caspar-david-friedrich-oder-duesteres-von-hieronymus-bosch.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://static.giga.de/wp-content/uploads/2024/06/elden-ring-shadow-of-the-erdtree-feuergolems-ofengolems-einfach-besiegen-rcm1680x944u.jpg"
+            />
+            <img
+              class="mySlides"
+              src="https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23324816/elden_1.png?quality=90&strip=all&crop=7.8125,0,84.375,100"
+            />
+
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+<!-------------------------------------------------------------end----Slideshow--------------------------------------------------------------------------------------->
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+        <div id="description">
+          <div id="descriptionText">
+            <h1>Description</h1>
+            <p>
+              Elden Ring ist ein Action-Rollenspiel, das von FromSoftware entwickelt und von Bandai Namco Entertainment veröffentlicht wurde. Es wurde am 25. Februar 2022 für PlayStation, Windows, Xbox One und Xbox Series X/S veröffentlicht. Das Spiel wurde von Hidetaka Miyazaki geleitet und die Welt wurde von dem amerikanischen Fantasy-Autor George R. R. Martin gestaltet. Elden Ring ist bekannt für seine offene Welt, sein tiefgründiges Kampfsystem und seine komplexe Geschichte. Das Spiel bietet eine dritte Person-Perspektive und ermöglicht es den Spielern, frei durch die offene Welt zu reisen. Die Hauptgebiete können mit dem Reittier des Spielercharakters, Torrent, durchquert werden. Zusätzlich gibt es lineare, versteckte Dungeons, die erforscht werden können, um nützliche Gegenstände zu finden. Spieler können gegen Gegner mit verschiedenen Waffen und Zaubersprüchen kämpfen und können sich auf nicht-direkte Auseinandersetzungen konzentrieren, die durch Stealth-Mechaniken ermöglicht werden
+          </div>
+        </div>
+        <div id="UserReview">
+          <div>
+            <h1>User Reviews</h1>
+            <p id="UserReviewText">
+              Elden Ring hat überwiegend positive Bewertungen von Nutzern erhalten. Auf Steam hat das Spiel eine hohe Bewertung, was auf eine sehr hohe Zufriedenheit der Spieler hindeutet. Viele Nutzer loben die tiefgehende Geschichte, die komplexen Charaktere und die Freiheit, die das Spiel bietet. Einige Nutzer erwähnen auch, dass das Spiel einige Fehler hat, aber diese werden durch die insgesamt hohe Qualität des Spiels ausgeglichen
+            </p>
+          </div>
+        </div>
+        <div id="ourReview">
+          <div>
+            <h1>Our Review</h1>
+            <p id="ourReviewText">
+              Elden Ring ist ein Meisterwerk des Action-Rollenspiel-Genres. Es bietet eine tiefgehende und fesselnde Geschichte, komplexe Charaktere und ein Freiheitsspielsystem, das es den Spielern ermöglicht, ihre eigenen Entscheidungen zu treffen und die Welt auf ihre Weise zu gestalten. Das Spiel hat eine beeindruckende grafische Darstellung und eine hervorragende Sprachausgabe, die zur Immersion beitragen. Trotz einiger kleiner Fehler und technischer Probleme ist Elden Ring ein Spiel, das jeden Action-Rollenspielfan begeistern wird
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <a id="footer" class="logo-font" href="Datenschutz.html"
+          >© 2025 RBN. All rights reserved.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
